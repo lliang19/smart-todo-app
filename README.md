@@ -17,7 +17,7 @@ Some devops in this repo include:
 - `docker` (future)
 
 ### Scripts
-#### `yarn start`
+### `yarn start`
 Starts the expo app in development mode. Use the [Expo Client](https://expo.io/tools#client) for iOS/Android to run the app locally. Expo uses a form of hot module reloading, so any change you make will be reflected automatically on save.
 
 However, sometimes certain parts of the app will not be updated correctly, so if you `Ctrl+C` and exit the Expo runtime environment and run `yarn start` again it should fix that.
