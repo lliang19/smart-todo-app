@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "steoates.autoimport",
+    "dbaeumer.vscode-eslint",
+    "formulahendry.auto-rename-tag",
+    "coenraads.bracket-pair-colorizer",
+    "mgmcdermott.vscode-language-babel",
+    "naumovs.color-highlight",
+    "ms-azuretools.vscode-docker",
+    "eamodio.gitlens",
+    "spywhere.guides",
+    "ms-vsliveshare.vsliveshare",
+    "wayou.vscode-todo-highlight"
+  ]
+}
