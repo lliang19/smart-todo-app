@@ -1,9 +1,9 @@
 import { createSelector } from 'reselect';
 
-const getUser = (state: GlobalState) => state.user;
+const getUser = (state: TReducers) => state.global.username;
 
-export const getCurrentUser = createSelector([getUser], (user) => {
-  return user;
+export const getCurrentUser = createSelector(getUser, (username) => {
+  return username;
 });
 
 export default getCurrentUser;

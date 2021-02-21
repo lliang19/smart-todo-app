@@ -1,20 +1,17 @@
-import {
-  ActionReducerMapBuilder,
-  createAction,
-  createReducer,
-} from '@reduxjs/toolkit';
+import { createAction, createReducer } from '@reduxjs/toolkit';
 
-const login = createAction<string>('global/login');
+export const username = createAction<string>('global/username');
+export const password = createAction<string>('global/password');
 
-const initialState: GlobalState = { user: '' };
+const initialState: TGlobalState = { username: '', password: '' };
 
-export default createReducer(
-  initialState,
-  (builder: ActionReducerMapBuilder<GlobalState>) => {
-    builder
-      .addCase(login, (state, action) => {
-        state.user = action.payload;
-      })
-      .addDefaultCase((state, action) => {});
-  },
-);
+export default createReducer(initialState, (builder) => {
+  builder
+    .addCase(username, (state, action) => {
+      state.username = action.payload;
+    })
+    .addCase(password, (state, action) => {
+      state.password = action.payload;
+    })
+    .addDefaultCase((state, action) => {});
+});
