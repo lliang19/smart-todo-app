@@ -7,6 +7,7 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "postinstall": "husky install",
+    "eslint": "eslint ./src",
     "eslint-fix": "eslint --fix ./src"
   },
   "dependencies": {
